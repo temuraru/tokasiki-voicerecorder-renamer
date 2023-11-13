@@ -1,6 +1,12 @@
 # Voice Recorder File Renamer
 
-This Python script is designed to process audio files exported by an Android voice recorder app (tokasiki voicerecorder). For each recording, it looks for an associated text file containing metadata and copies the audio file with a new filename based on extracted date, filetitle, and time information. If the text file is missing, the new filename is generated without the optional filetitle field. The original modification time of the file is preserved for the copied file.
+This Python script is designed to process audio files exported by an Android voice recorder app: 
+[Tokasiki Voice Recorder](https://www.appbrain.com/app/voice-recorder/com.tokasiki.android.voicerecorder) (it is not available anymore on Google Play Store!), created by [Mamoru Tokashiki](http://tokasiki.com/) (The last update of the app was on November 25, 2014)
+
+For each recording, it looks for an associated text file containing metadata and copies the audio file with a new filename based on extracted date, filetitle, and time information. 
+If the text file is missing, the new filename is generated without the optional filetitle field. 
+
+The original modification time of the file is preserved for the copied file.
 
 ## Usage
 
@@ -50,4 +56,4 @@ This Python script is designed to process audio files exported by an Android voi
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://mit-license.org/) file for details.
