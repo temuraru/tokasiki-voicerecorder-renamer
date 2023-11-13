@@ -2,12 +2,11 @@ import os
 import shutil
 from datetime import datetime
 
-
 # Ex:
 # data-2016-9-14-16-55-29.3gp + 2016-9-14-16-55-29.txt "2016-9-14-16-55-29,tfytgggg,22456663" ===>  2016-09-14 - tfytgggg (16-55-29).3gp
 
 # Path to the directory containing the audio files and metadata
-base_path = r"j:\Backup\_Audio Records-all\CallRecordings\com.tokasiki.android.voicerecorder"
+base_path = r"d:\Backup\com.tokasiki.android.voicerecorder"
 
 
 # Function to extract metadata from the text file, considering commas in the filetitle
@@ -114,4 +113,4 @@ for audio_filename in os.listdir(base_path):
         # Set the modification time of the new file to the original time
         os.utime(new_audio_path, (original_mtime, original_mtime))
 
-        print(f"File copied: {audio_filename} ===>  {new_filename}")
+        print(f"File copied: {audio_filename}  ===>  {new_filename}")
